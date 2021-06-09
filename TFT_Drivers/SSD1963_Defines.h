@@ -9,6 +9,14 @@
 #elif defined (SSD1963_800ALT_DRIVER)
   #define TFT_WIDTH  480
   #define TFT_HEIGHT 800
+#elif defined (SSD1963_800BD_DRIVER)
+  #define TFT_WIDTH  480
+  #define TFT_HEIGHT 800
+#endif
+
+//Set driver type common to all initialisation options
+#ifndef SSD1963_DRIVER
+  #define SSD1963_DRIVER
 #endif
 
 // Delay between some initialisation commands
